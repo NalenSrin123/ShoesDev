@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes-Online Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header " >
+            <div class="logo">
+                <img src="https://t4.ftcdn.net/jpg/03/32/46/81/360_F_332468117_1LWZWe1XjTbedkSOAjD7H6VfDq72i04a.jpg" alt="">
+            </div>
+            <i class="fa-solid fa-bars"></i>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="">Page</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Sale</a></li>
+                    
+                </ul>
+            </div>
+            <div class="cart">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <div class="userLog">
+        <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+            <i class="fa-solid fa-xmark cancelLog"></i>
+            <h3>Sign in here</h3>
+            <form action="" method="">
+                <div class="inputBox"> <input id="uname" type="text" name="Username" placeholder="Username"> <input id="pass" type="password" name="Password" placeholder="Password"> </div> <input type="submit" name="" value="Login">
+            </form> 
+            <a href="#">Forget Password<br> </a>
+            <div class="text-center">
+                <p style="color: #59238F;">Sign-Up</p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="add-to-cart">
+        <div class="add-to">
+            <i class="fa-solid fa-xmark cancel"></i>
+            <h1>Cart</h1>
+            <hr>
+            <div class="item">
+                <div class="imbage">
+                    <img width="80px" src="https://themewagon.github.io/stylish/images/card-image2.jpg" alt="">
+                </div>
+                <div class="qty">
+                    <button class="pre" onclick="decrement()">-</button>
+                    <input type="text" name="" value="1" id="value" disabled>
+                    <button class="plus" onclick="increment()">+</button>
+                </div>
+                
+                <div class="price">
+                    <p>$10</p> <!-- Display the unit price -->
+                    <i class="fa-solid fa-xmark"></i>
+                </div>    
+            </div>
+            <hr>
+            <div class="total-price ">
+                Total Price: $<span id="total">10</span> <!-- Display the calculated total price -->
+            </div>
+        </div>
+        
+    </div>
+    <section>
+        <div class="banner" id="home">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active d-flex gap-5">
+                    <img src="https://themewagon.github.io/stylish/images/card-image1.jpg" class="d-block" alt="...">
+                    <img src="https://themewagon.github.io/stylish/images/card-image2.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+               
+              </div>
+        </div>
+        <article>
+            <div class="products my-5 mt-5 " id="men">
+                <h4 class="text-start ">Men Shoes</h4>
+                <hr>
+                <div class="box-product men">       
+                    
+                </div>
+               
+            </div>
+        </article>
+        <div class="banner " style="margin: 100px 0; ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active d-flex gap-5">
+                    <img src="https://themewagon.github.io/stylish/images/collection-item1.jpg" class="d-block" alt="">
+                    <img src="https://themewagon.github.io/stylish/images/collection-item2.jpg" class="d-block" alt="">
+                  </div>
+                  
+                </div>
+               
+              </div>
+        </div>
+        <article>
+            <div class="products my-5 mt-5" id="women">
+                <h4 class="text-start ">Women Shoes</h4>
+                <hr>
+                <div class="box-product women">        
+                </div>
+               
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="footer container-fluid">
+            <div class="row">
+                <div class="col-6 col-xl-2">
+                    <div class="link">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2">
+                    <div class="link">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2">
+                    <div class="link">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2">
+                    <div class="link">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2">
+                    <div class="link">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2">
+                    <div class="link">
+                        <h4>Info</h4>
+                        <ul>
+                            <li><a href="">Track Your Order</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                            <li><a href="">Shipping</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Community</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
